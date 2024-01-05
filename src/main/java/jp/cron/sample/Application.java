@@ -17,7 +17,7 @@ public class Application {
         environment.getPropertySources().addLast(new SettingsServerPropertySource());
         new SpringApplicationBuilder(Application.class)
                 .environment(environment)
-                .web(WebApplicationType.NONE).run(args);
+                .run(args);
     }
 
     @Bean
